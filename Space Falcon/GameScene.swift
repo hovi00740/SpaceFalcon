@@ -8,6 +8,9 @@
 
 import SpriteKit
 import GameplayKit
+import Lottie
+
+
 
 var gameScore = 0
 
@@ -28,6 +31,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let playerInfoLayer: CGFloat = 100
     let scoreLabel = SKLabelNode(fontNamed: "DestructoBeam BB")
     let tapToStartLabel = SKLabelNode(fontNamed: "DestructoBeam BB")
+    let bulletSound = SKAction.playSoundFileNamed("LaserBullet.wav", waitForCompletion: false)
+    let explosionSound = SKAction.playSoundFileNamed("BoomExplosion", waitForCompletion: false)
     enum gameState{
         case preGame
         case inGame
@@ -187,7 +192,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
         func changeScene(){
         let sceneToMoveTo = GameOverScene(size: self.size)
-        sceneToMoveTo.scaleMode = self.scaleMode
+            sceneToMoveTo.scaleMode = self.scaleMode
         print("Scale is: \(sceneToMoveTo.scaleMode)")
         let gameOverTransition = SKTransition.fade(withDuration: 0.5)
         self.view!.presentScene(sceneToMoveTo, transition: gameOverTransition)
@@ -207,11 +212,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if body1.categoryBitMask == LawsOfPhysics.FORTHEPLAYER && body2.categoryBitMask == LawsOfPhysics.FORTHEENEMY{
             
             if(body1.node != nil){
-                spawnExplosion(spawnPosition: body1.node!.position)
+                spawnExplosion(spawnPosition: body1.node!.position, isSilenced: true)
             }
             
             if(body2.node != nil){
-                spawnExplosion(spawnPosition: body2.node!.position)
+                spawnExplosion(spawnPosition: body2.node!.position, isSilenced: true)
             }
             body1.node?.removeFromParent()
             body2.node?.removeFromParent()
@@ -224,7 +229,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     return
                 }
                 else{
-                    spawnExplosion(spawnPosition: body2.node!.position)
+                    spawnExplosion(spawnPosition: body2.node!.position, isSilenced: false)
                 }
             }
             body1.node?.removeFromParent()
@@ -233,7 +238,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    func spawnExplosion(spawnPosition: CGPoint){
+    func spawnExplosion(spawnPosition: CGPoint, isSilenced: Bool){
+//        let explosionAnimationView = AnimationView(name: "AnimatedExplosion")
+//        explosionAnimationView.frame = CGRect(x: spawnPosition.x, y: spawnPosition.y, width: 100, height: 100)
+//        explosionAnimationView.contentMode = .scaleAspectFill
+//        self.view!.addSubview(explosionAnimationView)
+//        explosionAnimationView.play()
+        
+        
         let explosion = SKSpriteNode(imageNamed: "boom")
         explosion.position = spawnPosition
         explosion.zPosition = 3
@@ -242,9 +254,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let scaleIn = SKAction.scale(to: 2, duration: 0.2)
         let fadeOut = SKAction.fadeOut(withDuration: 0.2)
         let delete = SKAction.removeFromParent()
+        if(!isSilenced){
+          let explosionSequence = SKAction.sequence([scaleIn,fadeOut,delete])
+            explosion.run(explosionSequence)
+        }
+        else{
+            let explosionSequence = SKAction.sequence([explosionSound,scaleIn,fadeOut,delete])
+            explosion.run(explosionSequence)
+        }
         
-        let explosionSequence = SKAction.sequence([scaleIn,fadeOut,delete])
-        explosion.run(explosionSequence)
+        
     }
     
     func startNewLevel(){
@@ -294,7 +313,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(bullet)
         let moveBullet = SKAction.moveTo(y: self.size.height + bullet.size.height, duration: 1)
         let deleteBullet = SKAction.removeFromParent()
-        let bulletSequence = SKAction.sequence([moveBullet, deleteBullet])
+        let bulletSequence = SKAction.sequence([bulletSound, moveBullet, deleteBullet])
         bullet.run(bulletSequence)
     }
     

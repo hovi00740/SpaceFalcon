@@ -3,29 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BBFC8C373E23532E9FE929D /* Pods_Space_Falcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94756AF6F4F8C679E5A953E7 /* Pods_Space_Falcon.framework */; };
 		B112A3242380817D008E01FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112A3232380817D008E01FC /* AppDelegate.swift */; };
 		B112A3262380817D008E01FC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B112A3252380817D008E01FC /* GameScene.sks */; };
 		B112A3282380817D008E01FC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B112A3272380817D008E01FC /* Actions.sks */; };
 		B112A32A2380817D008E01FC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112A3292380817D008E01FC /* GameScene.swift */; };
 		B112A33423808184008E01FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B112A33223808184008E01FC /* LaunchScreen.storyboard */; };
+		B116641C23A828DA00C03E5C /* AnimatedExplosion.json in Resources */ = {isa = PBXBuildFile; fileRef = B116641B23A828DA00C03E5C /* AnimatedExplosion.json */; };
+		B116641D23A82A7100C03E5C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B11EB142238221C800E75AAF /* Info.plist */; };
 		B11EB145238221C800E75AAF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11EB138238221C800E75AAF /* GameViewController.swift */; };
 		B11EB146238221C800E75AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11EB139238221C800E75AAF /* Assets.xcassets */; };
 		B11EB147238221C800E75AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11EB13A238221C800E75AAF /* LaunchScreen.storyboard */; };
 		B11EB148238221C800E75AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11EB13C238221C800E75AAF /* Main.storyboard */; };
 		B11EB14E238221C800E75AAF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B11EB143238221C800E75AAF /* Actions.sks */; };
-		B11EB1502382233E00E75AAF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B112A33523808184008E01FC /* Info.plist */; };
 		B11EB1562382321900E75AAF /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11EB1552382321900E75AAF /* GameOverScene.swift */; };
 		B11EB158238328F500E75AAF /* destructobeambb_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B11EB157238328F400E75AAF /* destructobeambb_bold.ttf */; };
 		B14CD5B02388B263006F08C9 /* LawsOfPhysics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CD5AF2388B263006F08C9 /* LawsOfPhysics.swift */; };
 		B14CD5B22388E9B6006F08C9 /* PlayerShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CD5B12388E9B6006F08C9 /* PlayerShip.swift */; };
+		B1AF173323A7FE72001492D7 /* LaserBullet.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1AF173223A7FE72001492D7 /* LaserBullet.wav */; };
+		B1AF173723A8017A001492D7 /* BoomExplosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1AF173623A8017A001492D7 /* BoomExplosion.wav */; };
 		B1BB1FE123885F1800B21025 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BB1FE023885F1800B21025 /* Ship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C876142C22A864B7CA2CD9F /* Pods-Space Falcon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space Falcon.debug.xcconfig"; path = "Target Support Files/Pods-Space Falcon/Pods-Space Falcon.debug.xcconfig"; sourceTree = "<group>"; };
+		58BCB25BEE6CE499CF7C4FAD /* Pods-Space Falcon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space Falcon.release.xcconfig"; path = "Target Support Files/Pods-Space Falcon/Pods-Space Falcon.release.xcconfig"; sourceTree = "<group>"; };
+		94756AF6F4F8C679E5A953E7 /* Pods_Space_Falcon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_Falcon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B112A3202380817D008E01FC /* Space Falcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Falcon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B112A3232380817D008E01FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B112A3252380817D008E01FC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -35,7 +42,7 @@
 		B112A32E2380817D008E01FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B112A33023808184008E01FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B112A33323808184008E01FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B112A33523808184008E01FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B116641B23A828DA00C03E5C /* AnimatedExplosion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimatedExplosion.json; sourceTree = "<group>"; };
 		B11EB137238221C800E75AAF /* mrsmonsterboldoutital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mrsmonsterboldoutital.ttf; sourceTree = "<group>"; };
 		B11EB138238221C800E75AAF /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B11EB139238221C800E75AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +58,8 @@
 		B11EB157238328F400E75AAF /* destructobeambb_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = destructobeambb_bold.ttf; sourceTree = "<group>"; };
 		B14CD5AF2388B263006F08C9 /* LawsOfPhysics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsOfPhysics.swift; sourceTree = "<group>"; };
 		B14CD5B12388E9B6006F08C9 /* PlayerShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerShip.swift; sourceTree = "<group>"; };
+		B1AF173223A7FE72001492D7 /* LaserBullet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LaserBullet.wav; sourceTree = "<group>"; };
+		B1AF173623A8017A001492D7 /* BoomExplosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BoomExplosion.wav; sourceTree = "<group>"; };
 		B1BB1FE023885F1800B21025 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,17 +68,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BBFC8C373E23532E9FE929D /* Pods_Space_Falcon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		267F906EE43DA5F7EE0CFE10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94756AF6F4F8C679E5A953E7 /* Pods_Space_Falcon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B112A3172380817D008E01FC = {
 			isa = PBXGroup;
 			children = (
 				B112A3222380817D008E01FC /* Space Falcon */,
 				B112A3212380817D008E01FC /* Products */,
+				BF93FE526BBBE1FD56F53377 /* Pods */,
+				267F906EE43DA5F7EE0CFE10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +104,8 @@
 		B112A3222380817D008E01FC /* Space Falcon */ = {
 			isa = PBXGroup;
 			children = (
+				B116641E23A82E3B00C03E5C /* Animations */,
+				B116641F23A82E4A00C03E5C /* Sounds */,
 				B1BB1FDF23885EF800B21025 /* Controller */,
 				B1BB1FDE23885EF300B21025 /* View */,
 				B1BB1FDD23885EE900B21025 /* Model */,
@@ -98,9 +120,25 @@
 				B11EB136238221C800E75AAF /* Space Falcon */,
 				B112A33023808184008E01FC /* Assets.xcassets */,
 				B112A33223808184008E01FC /* LaunchScreen.storyboard */,
-				B112A33523808184008E01FC /* Info.plist */,
 			);
 			path = "Space Falcon";
+			sourceTree = "<group>";
+		};
+		B116641E23A82E3B00C03E5C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B116641B23A828DA00C03E5C /* AnimatedExplosion.json */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		B116641F23A82E4A00C03E5C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B1AF173623A8017A001492D7 /* BoomExplosion.wav */,
+				B1AF173223A7FE72001492D7 /* LaserBullet.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		B11EB136238221C800E75AAF /* Space Falcon */ = {
@@ -153,6 +191,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		BF93FE526BBBE1FD56F53377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C876142C22A864B7CA2CD9F /* Pods-Space Falcon.debug.xcconfig */,
+				58BCB25BEE6CE499CF7C4FAD /* Pods-Space Falcon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B112A33823808184008E01FC /* Build configuration list for PBXNativeTarget "Space Falcon" */;
 			buildPhases = (
+				C4C8B4283456160792D95812 /* [CP] Check Pods Manifest.lock */,
 				B112A31C2380817D008E01FC /* Sources */,
 				B112A31D2380817D008E01FC /* Frameworks */,
 				B112A31E2380817D008E01FC /* Resources */,
+				67E2BF082554D488393ADDCB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,19 +260,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B11EB1502382233E00E75AAF /* Info.plist in Resources */,
+				B116641D23A82A7100C03E5C /* Info.plist in Resources */,
 				B11EB147238221C800E75AAF /* LaunchScreen.storyboard in Resources */,
 				B11EB148238221C800E75AAF /* Main.storyboard in Resources */,
 				B112A3262380817D008E01FC /* GameScene.sks in Resources */,
 				B11EB14E238221C800E75AAF /* Actions.sks in Resources */,
 				B112A33423808184008E01FC /* LaunchScreen.storyboard in Resources */,
+				B116641C23A828DA00C03E5C /* AnimatedExplosion.json in Resources */,
+				B1AF173323A7FE72001492D7 /* LaserBullet.wav in Resources */,
 				B11EB158238328F500E75AAF /* destructobeambb_bold.ttf in Resources */,
+				B1AF173723A8017A001492D7 /* BoomExplosion.wav in Resources */,
 				B11EB146238221C800E75AAF /* Assets.xcassets in Resources */,
 				B112A3282380817D008E01FC /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67E2BF082554D488393ADDCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Space Falcon/Pods-Space Falcon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Space Falcon/Pods-Space Falcon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Space Falcon/Pods-Space Falcon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C8B4283456160792D95812 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Space Falcon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B112A31C2380817D008E01FC /* Sources */ = {
@@ -394,6 +488,7 @@
 		};
 		B112A33923808184008E01FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C876142C22A864B7CA2CD9F /* Pods-Space Falcon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -413,6 +508,7 @@
 		};
 		B112A33A23808184008E01FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58BCB25BEE6CE499CF7C4FAD /* Pods-Space Falcon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

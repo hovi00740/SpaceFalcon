@@ -30,8 +30,9 @@ class GameOverScene: SKScene{
         
         
         let background = SKSpriteNode(imageNamed: "SpaceBackground")
-        background.position = centeredMiddlePosition
-        print(centeredMiddlePosition)
+        background.size = self.size
+        background.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        background.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
         background.zPosition = backgroundLayer
         self.addChild(background)
         
